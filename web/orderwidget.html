@@ -36,6 +36,10 @@
                 background: #3B5998;
                 color: white;
             }
+            .fa-globe {
+                background: #ffffff;
+                color: white;
+            }
 
             .fa-twitter {
                 background: #55ACEE;
@@ -70,7 +74,7 @@
             }
 
             .buttn1 {
-                background-color: #de7eb7;
+                background-color: #35ac47;
                 border: none; /* Remove borders */
                 color: white; /* White text */
                 padding: 12px 16px; /* Some padding */
@@ -78,7 +82,7 @@
                 cursor: pointer;
                 border-radius: 16px;
             }
-           
+
 
         </style>
 
@@ -100,7 +104,7 @@
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
 
-                            <a class="nav-link active" data-toggle="tab" href="#menu1"><i class="fa fa-youtube"></i></a>
+                            <a class="nav-link active" data-toggle="tab" href="#menu1"><img class="button-enter__icon" src="img/icons/yt.png"></a>
                         </li>
                         <li class="nav-item">
 
@@ -234,39 +238,39 @@
                     </div>
 
                     <form>
-                        <div class="form-group" style="margin-left: 5px;margin-top: 10px;"><i class="fa fa-eye" style="height: 25px;"></i>
+                        <div class="form-group" style="margin-left: 5px;"><img class="button-enter__icon" src="img/icons/eye.png">
                             <input type="checkbox" style="margin-left: 5px;height: 13px;font-size: 15px;"><span style="margin-left: 10px;height: 0px;font-size: 19px;"><strong>Views</strong></span></div>
                         <div class="form-group">
                             <h6 style="height: 37px;margin-left: 10px;">QTY :&nbsp;<input type="number" id="quantity" name="quantity" min="100" max="50000" style="width: 150px;border-style: solid; border-radius: 200px;border-color:#e7e7e7; border-top-color:#e7e7e7;  background-color: #ffffff; padding: 5px"></h6>
                         </div>
-                       <label for="customRange1"></label>
+                        <label for="customRange1"></label>
                         <input type="range" class="custom-range" id="customRange1"type="range" min="1000" max="500000" value="0" class="slider"  name="range" oninput="amount.value=range.value">
                         <output id="amount" name="amount" for="range">0</output>
 
 
                         <div class="form-group">
-                            <button class="btn btn-primary border rounded border-white" type="button" style="margin-left: 10px;background-color: rgb(195,197,200);color: rgb(11,11,11);font-size: 14px;height: 38px;"><strong>Settings</strong></button>
-                            <button class="btn btn-primary border rounded border-white" type="button" style="margin-left: 10px;background-color: rgb(195,197,200);color: rgb(11,11,11);font-size: 14px;height: 38px;"><strong>Location</strong></button>
-                           
+                            <button class="button" type="button" style="margin-left: 10px;background-color: rgb(255, 255, 255); border-radius: 200px; border: solid; color: rgb(11,11,11);font-size: 14px;height: 38px;border-color:#e7e7e7;"><strong>Settings</strong></button>
+                            <button class="button" type="button" style="margin-left: 10px; border-radius: 50%; background-color: rgb(255, 255, 255);color: rgb(11,11,11);font-size: 14px;height: 38px;border-style: solid;border-color:#e7e7e7;"><img class="button-enter__icon" src="img/icons/globe.png"></button>
+
+
 
                         </div>
                     </form>
 
                     <form>
-                        <div class="form-group" style="margin-left: 5px;margin-top: 10px;"><i class="fa fa-bell" style="height: 25px;"></i>
+                        <div class="form-group" style="margin-left: 5px;"><img class="button-enter__icon" src="img/icons/registration.png" style="background-color: #ffffff">
                             <input type="checkbox" style="margin-left: 5px;height: 13px;font-size: 15px;"><span style="margin-left: 10px;height: 0px;font-size: 19px;"><strong>Subscribers</strong></span></div>
                         <div class="form-group">
-                            <h6 style="height: 37px;margin-left: 10px;">QTY :&nbsp;<input   type="number" id="quantity" name="quantity" min="100" max="500000" style="width: 150px;border-style: solid; border-radius: 200px;border-color:#e7e7e7; border-top-color:#e7e7e7;  background-color: #ffffff; padding: 5px""></h6>
-                      
+                            <h6 style="height: 37px;margin-left: 10px;">QTY :&nbsp;<input   type="number" id="quantity" name="quantity" min="100" max="500000" style="width: 150px;border-style: solid; border-radius: 200px;border-color:#e7e7e7; border-top-color:#e7e7e7;  background-color: #ffffff; padding: 5px"></h6>
+
                         </div>
                         <label for="customRange1"></label>
-                        <input type="range" class="custom-range" id="customRange1"type="range" min="1000" max="50000" value="0" class="slider"  name="
-range" oninput="amount.value=range.value">
+                        <input type="range" class="custom-range" id="customRange1"type="range" min="1000" max="500000" value="0" class="slider"  name="range" oninput="amount.value=range.value">
                         <output id="amount" name="amount" for="range">0</output>
 
 
                         <div class="form-group">
-                            <button class="btn btn-primary border rounded border-white" type="button" style="margin-left: 10px;background-color: rgb(195,197,200);color: rgb(11,11,11);font-size: 14px;height: 38px;"><strong>Settings</strong></button>
+                            <button class="button" type="button" style="margin-left: 10px;background-color: rgb(255, 255, 255); border-radius: 200px; border: solid; color: rgb(11,11,11);font-size: 14px;height: 38px;border-color:#e7e7e7;"><strong>Settings</strong></button>
 
 
                         </div>
@@ -278,7 +282,21 @@ range" oninput="amount.value=range.value">
             <div class="form-group" style="margin-left: 20px">
                 <button class="buttn" type="button" style="margin-top: 5px" ><strong>  <img class="button-enter__icon" src="img/icons/plus.png">Promote more resources</strong></button>
                 <button class="buttn1" type="button"style="margin-top: 5px;margin-left: 10px" ><strong><img class="button-enter__icon" src="img/icons/cart.png">Checkout</strong></button>
-                <span>Total to pay :</span>
+                <div class="row" style="margin-left: 20px;margin-right: 20px;margin-bottom: 20px; margin-top:20px">
+                    <div class="col">
+                    <h4 style="margin-top: 10px"><strong>Order Summary </strong></h4>  
+                    </div>
+                    <div class="col">
+                     <h4 style="margin-top: 10px"><strong>Total : </strong></h4>   
+                    </div>
+                    <div class="col" style="margin-left: 10px">
+                    <h2><strong>$45</strong></h2>  
+                    </div>
+                    
+
+                </div>
+              
+
 
 
             </div>
