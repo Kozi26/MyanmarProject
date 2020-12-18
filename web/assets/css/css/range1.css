@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 18, 2020, 9:28:36 AM
+    Author     : abc
+*/
+
+.slideContainer {
+	width: 75%;
+	margin-top: 50px;
+  align-self: center; 
+}
+  
+  .slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(90deg, rgb(117, 252, 117) 5%, rgb(214, 214, 214) 0%);
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	border-radius: 12px;
+	box-shadow: 0px 1px 10px 1px black;
+	}
+  
+  .slider:hover {
+	opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 40px;
+	height: 40px;
+  background: white;
+	cursor: pointer;
+	border-radius: 50%;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 50%;
+  background: white;
+  }
